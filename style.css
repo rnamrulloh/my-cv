@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1b1b1b;
+    color: #e0e0e0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#toggle-dark-mode {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+#toggle-dark-mode:hover {
+    color: #007bff;
+}
+
+/* Dark Mode for Button */
+body.dark-mode #toggle-dark-mode {
+    color: #f4f4f9;
+}
+
+.card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+/* Dark Mode for Card */
+body.dark-mode .card {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #007bff;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+body.dark-mode h1 {
+    color: #f4f4f9;
+}
+
+.job-title {
+    font-size: 1.1rem;
+    color: #007bff;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+}
+
+/* Dark Mode for Headings */
+body.dark-mode h2 {
+    color: #f4f4f9;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+body.dark-mode p {
+    color: #bbb;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.timeline-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .timeline-item {
+    background-color: #333;
+    color: #f4f4f9;
+}
